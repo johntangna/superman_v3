@@ -1,4 +1,4 @@
-# oms_erp_front_v3
+# superman_v3
 
 ## Project setup
 ```
