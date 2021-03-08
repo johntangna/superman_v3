@@ -1,0 +1,47 @@
+#app {
+  .main-container {
+    min-height: calc(100% - #{$sideBarHeight});
+    transition: margin-left .28s;
+    position: relative;
+  }
+
+  .topbar-container {
+    width: 100%;
+    height: $sideBarHeight;
+    box-shadow: 0 1px 2px -1px rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .04);
+    .el-menu--horizontal > .el-submenu .el-submenu__title {
+      height: $sideBarHeight;
+      line-height: $sideBarHeight;
+      color: $menuText !important;
+    }
+
+    .el-submenu__title:hover {
+      background-color: transparent !important;
+    }
+
+    .el-menu--horizontal .el-menu-item {
+      height: $sideBarHeight;
+      line-height: $sideBarHeight;
+      color: $menuText !important;
+    }
+    .el-menu--popup{
+      //width: 150px;
+      li{
+        max-width: 200px;
+        min-width: 150px;
+        //width: 150px;
+      }
+    }
+    .el-menu--horizontal .el-menu-item:hover {
+      background-color: transparent !important;
+    }
+    .el-icon-arrow-down {
+      display: none;
+    }
+  }
+
+  .el-menu--collapse {
+    width: 100%;
+  }
+
+}
